@@ -11,7 +11,11 @@ const router = express.Router();
     })
 
     router.get('/categories', (req,res) => {
-        res.send("Categories Section");
+        res.render("admin/categories")
+    })
+
+    router.get('/categories/add', (req,res) => {
+        res.render("admin/addcategories")
     })
 
 module.exports = router

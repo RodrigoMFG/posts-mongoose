@@ -3,7 +3,7 @@ const router = express.Router();
 
 //Rotas
     router.get('/', (req, res) =>{
-        res.send("ADM Pannel Main Page");
+        res.render("admin/index");
     })
 
     router.get('/posts', (req,res) => {
